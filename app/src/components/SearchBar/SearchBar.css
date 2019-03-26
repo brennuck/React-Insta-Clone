@@ -1,0 +1,9 @@
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.items h1 {
+    font-family: 'Lobster Two', cursive;
+    font-weight: 100;
+}

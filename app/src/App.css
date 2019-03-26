@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -22,12 +24,55 @@
 .App-link {
   color: #61dafb;
 }
+.thumb {
+  border-radius: 50%;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+h6 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+ .bt {
+  display: flex;
+  justify-content: left;
+
+   margin: 5px;
+}
+
+
+ .commentz {
+  margin: 10px; 
+  line-height: 25px;
+}
+
+ .search {
+  display: flex;
+ justify-content: space-evenly;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 7px;
+}
+
+ .yup {
+  margin: 5px;
+}
+
+ .likes {
+  margin: 5px;
+}
+
+ .mmm {
+  display: flex;
+  font-size: 50px
+} 
+.top-post {
+  display: flex;
+  align-items: center;
+  background: rgb(247, 244, 244);
+  border: 1px solid lightgray;
+  border-radius: 2px;
 }

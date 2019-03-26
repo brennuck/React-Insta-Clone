@@ -1,16 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PostContainer from './components/PostContainer/PostContainer';
 import SearchBar from './components/SearchBar/SearchBar';
+import dummyData from './components/dummy-data';
 
-class App extends Component {
-  render() {
+ class App extends Component {
+  constructor(){
+    super();
+    this.state= {
+      data: dummyData,
+    }
+  }
+
+   render() {
     return (
       <div className="App">
-        <SearchBar />
+      <SearchBar/>
+      <PostContainer posts = {this.state.data}/>
       </div>
     );
   }
 }
 
-export default App;
+ export default App;
