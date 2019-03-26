@@ -17,16 +17,18 @@ const PostContainer = props => {
             <h6>{post.username}</h6>
           </div>
           <img src={post.imageUrl} alt={post.timestamp} />
-          <span className="bt">
-            <i class="far fa-heart" />
-            <i class="far fa-comment" />
-          </span>
-          <strong>
-            <span className="likes">{post.likes} Likes</span>
-          </strong>
-          <span className="comments">
-            <CommentSection comments={post.comments} />
-          </span>
+          <div className="comment-yo">
+            <span className="bt">
+              <i class="far fa-heart" />
+              <i class="far fa-comment" />
+            </span>
+            <strong>
+              <span className="likes">{post.likes} Likes</span>
+            </strong>
+            <span className="comments">
+              <CommentSection comments={post.comments} />
+            </span>
+          </div>
         </div>
       ))}
     </div>
