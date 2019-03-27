@@ -1,0 +1,57 @@
+.postHeader {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    background: rgb(248, 247, 247);
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+.image-icon img {
+    border-radius: 50%;
+    height: 30px;
+    margin-right: 10px;
+}
+.user {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.bt {
+    display: flex;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-bottom: none;
+}
+.heart {
+    margin-right: 10px;
+}
+.commentText {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-top: none;
+    border-bottom: none;
+    text-align: left;
+    font-size: 14px;
+}
+form {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-top: none;
+    display: flex;
+}
+.post-border {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+form input {
+    border: none;
+    border-top: 1px solid lightgrey;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+.post-image {
+    height: 100%;
+}

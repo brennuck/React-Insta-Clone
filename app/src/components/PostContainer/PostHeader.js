@@ -3,10 +3,14 @@ import './PostContainer.css';
 
 const PostHeader = props => {
     return (
-        <section className="post-h">
-            <img src={props.thumbnailUrl}/>
-            <h3>{props.username}</h3>
-        </section>
+        <div className="postHeader">
+            <div className="image-icon">
+                <img src={props.thumbnailUrl}/>
+            </div>
+            <div>
+                {props.username}
+            </div>
+        </div>
     )
 }
 
