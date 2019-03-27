@@ -13,12 +13,14 @@ const Post = props => {
             <div className="post-image">
                 <img src={props.post.imageUrl}/>
             </div>
-            <div className="bt">
-                <div className="heart">
-                    <i class="far fa-heart"></i>
-                </div>
-                <div className="commentBubble">
-                    <i class="far fa-comment"></i>
+            <div className="like-section">
+                <div className="bt">
+                    <div className="heart">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div className="commentBubble">
+                        <i class="far fa-comment"></i>
+                    </div>
                 </div>
             </div>
             <CommentSection comment={props.post.comments} />

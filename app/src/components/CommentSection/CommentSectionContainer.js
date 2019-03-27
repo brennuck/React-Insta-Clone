@@ -6,7 +6,7 @@ class CommentSectionContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      comment: props.comment
+      comment: props.comment,
     };
   }
   render() {
