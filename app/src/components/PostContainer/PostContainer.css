@@ -19,13 +19,15 @@
 }
 .bt {
     display: flex;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     border: 1px solid lightgrey;
     border-bottom: none;
     border-top: none;
+    flex-direction: column;
 }
-.heart {
-    margin-right: 10px;
+.likeComment {
+    display: flex;
+    flex-direction: row;
 }
 .commentText {
     padding: 10px;
@@ -55,4 +57,18 @@ form input {
 }
 .post-image {
     height: 100%;
+}
+.likeNumber {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.testing {
+    display: flex;
+    align-items: center;
+}
+.heart {
+    margin-right: 20px;
+    cursor: pointer;
 }

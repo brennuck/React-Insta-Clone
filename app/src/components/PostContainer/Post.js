@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import PostHeader from './PostHeader';
 import CommentSection from '../CommentSection/CommentSectionContainer';
 import './PostContainer.css';
+import Like from './Like';
 
 class Post extends React.Component {
     constructor(props) {
@@ -23,26 +24,17 @@ class Post extends React.Component {
                 <PostHeader
                     username={this.props.post.username}
                     thumbnailUrl={this.props.post.thumbnailUrl}
-                    incrementLike={this.incrementLike}
-                    likes={this.state.likes}
                 />
                 <div className="post-image">
                     <img src={this.props.post.imageUrl}/>
                 </div>
-                <div className="like-section">
-                    <div className="bt" onClick={this.props.incrementLike}>
-                        <div className="heart">
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div className="commentBubble">
-                            <i class="far fa-comment"></i>
-                        </div>
-                    </div>
-                    <div className="bt">
-                        <div className="likes">{this.props.likes}</div>
-                    </div>
-                </div>
-                <CommentSection comment={this.props.post.comments} />
+                <Like
+                    incrementLike={this.incrementLike}
+                    likes={this.state.likes}
+                />
+                <CommentSection
+                comment={this.props.post.comments}
+                />
             </div>
     )
     }
